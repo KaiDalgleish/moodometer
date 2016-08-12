@@ -32,7 +32,7 @@ def get_team():
     state = randomWord()
 
     params = {"client_id": CLIENT_ID,
-                "redirect_uri": "http://localhost:5000/slacked",
+                "redirect_uri": "http://127.0.0.1:5000/slacked",
                 "scope": "channels:history channels:read team:read",
                 "state": state}
     oauth_url = "https://slack.com/oauth/authorize?" + urlencode(params)
